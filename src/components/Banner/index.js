@@ -1,7 +1,6 @@
 import React from 'react';
 import { titleBanner, wrapperBanner } from './styles';
 import workImg from '@images/work.svg';
-
 const Banner = () => {
   return (
     <div className={wrapperBanner}>
