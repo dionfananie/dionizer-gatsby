@@ -42,13 +42,14 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "husky": {
-      "hooks": {
-        "pre-commit": "line-staged",
-        "pre-push": "npm test"
-      }
+  
+  },
+  "hushky": {
+    "hooks":{
+      "pre-commit":"line-staged"
     }
   },
+  
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [
       "prettier --write",
