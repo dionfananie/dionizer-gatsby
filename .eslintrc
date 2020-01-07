@@ -6,9 +6,17 @@
     "extends": [
       "eslint:recommended",
       "plugin:react/recommended",
-      "plugin:prettier/recommended"
+      "plugin:prettier/recommended",
+      "plugin:jest/recommended"
     ],
     "plugins": [
-      "react"
+      "react",
+      "jest"
+    ],
+    "overrides": [
+      {
+        "files": [ "src/*.js"],
+        "excludedFiles": "*.test.js"
+      }
     ]
   }
