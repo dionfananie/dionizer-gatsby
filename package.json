@@ -52,7 +52,7 @@
 
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [
-      "npm run format",
+      "prettier --write \"**/*.{js,jsx,json,md}\"",
       "git add"
     ]
   },
