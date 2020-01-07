@@ -6,6 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "emotion": "^10.0.27",
+    "eslint-loader": "^3.0.3",
     "gatsby": "^2.18.12",
     "gatsby-image": "^2.2.34",
     "gatsby-plugin-alias-imports": "^1.0.5",
@@ -42,13 +43,13 @@
   ],
   "license": "MIT",
   "scripts": {
+    "test": "jest --coverage",
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "jest --coverage && gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "jest --coverage"
+    "clean": "gatsby clean"
   },
   "husky": {
     "hooks": {
@@ -58,6 +59,7 @@
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [
       "prettier --write \"**/*.{js,jsx,json,css}\"",
+      "jest--coverage",
       "git add"
     ]
   },
