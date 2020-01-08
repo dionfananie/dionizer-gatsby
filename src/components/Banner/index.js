@@ -1,7 +1,10 @@
 import React from 'react';
-import { titleBanner, wrapperBanner } from './styles';
-import workImg from '@images/work.svg';
 import propTypes from 'prop-types';
+
+import workImg from '@images/work.svg';
+import { wrapperBanner } from '../styles';
+
+import { titleBanner } from './styles';
 
 const Banner = ({ title }) => {
   return (

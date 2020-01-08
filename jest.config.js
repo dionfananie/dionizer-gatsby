@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-undef
 module.exports = {
   transform: {
     '^.+\\.jsx?$': `<rootDir>/jest-preprocess.js`,
