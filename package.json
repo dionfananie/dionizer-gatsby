@@ -64,7 +64,6 @@
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [
       "prettier --write \"**/*.{js,jsx,json,css}\"",
-      "jest--coverage",
       "git add"
     ]
   },

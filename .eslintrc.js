@@ -66,7 +66,7 @@ module.exports = {
     ],
     'react/react-in-jsx-scope': 2,
   },
- 
+
   overrides: [
     {
       files: ['src/*.js'],

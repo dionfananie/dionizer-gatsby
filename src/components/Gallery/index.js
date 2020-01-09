@@ -4,7 +4,8 @@ import unsplash from '@plugins/unsplash';
 
 const ImagesSection = () => {
   const [imgData, setImgData] = useState();
-
+  console.log('ID: ', process.env.UNSPLASH_KEY);
+  console.log('ENV: ', process.env.NODE_ENV);
   const fetchImage = useCallback(async () => {
     try {
       const resp = await unsplash.search.photos('team', 0, 15, { orientation: 'landscape' });
